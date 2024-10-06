@@ -1,3 +1,7 @@
+## Requirements: 
+
+Biomes O plenty, Dynamic Trees, OTG
+
 <p align="center">
 	<img src="https://i.postimg.cc/nzrNfhw2/2024-10-05-17-45-14.png" />
 
