@@ -1,6 +1,6 @@
 ## Requirements: 
 
-### Biomes O' Plenty, Dynamic Trees, Dynamic Trees BOP, OTG
+### Biomes O' Plenty, Dynamic Trees, Dynamic Trees BOP, Open Terrain Generator
 
 <p align="center">
 	<img src="https://i.postimg.cc/nzrNfhw2/2024-10-05-17-45-14.png" />
