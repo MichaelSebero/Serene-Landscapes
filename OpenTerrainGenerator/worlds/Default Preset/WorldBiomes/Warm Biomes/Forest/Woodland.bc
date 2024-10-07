@@ -46,7 +46,7 @@ BiomeRarity: 40
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
-BiomeColor: #8b4513
+BiomeColor: #4d7b1e
 
 ####################
 # Isle biomes only #
@@ -82,7 +82,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Ice Plains, Cold Taiga, Cold Taiga M, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Extreme Hills M, Cold Beach, FrozenOcean, Cold Taiga Hills, Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle,  Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis
+NotBorderNear: Ice Plains, Cold Taiga, Cold Taiga M, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Extreme Hills M, Cold Beach, FrozenOcean, Cold Taiga Hills, Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle,  Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Extreme Hills Edge, Extreme Hills+ M, Alpine Fir Forest, Alpine Mountains Edge, Alpine Mountains M, Alpine Mountains
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

@@ -81,7 +81,7 @@ BiomeIsBorder: Ocean
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Cold Beach, Beach, Deep Ocean, Desert, Desert M, Swampland, Swampland M, Roofed Forest, Roofed Forest M, Mesa, Mesa (Bryce), Mesa Plateau F M, Mesa Plateau F, Mesa Plateau M, Mesa Plateau, MushroomIsland, MushroomIslandShore, Savanna, Savanna M, Savanna Plateau M, Savanna Plateau, Flower Grassland, DesertCoast, FrozenOcean, Jungle, JungleEdge, JungleEdge M, JungleHills, Jungle M, Jungle River, Island Beach, Steppe, Steppe Field, Field
+NotBorderNear: Cold Beach, Beach, Deep Ocean, Desert, Desert M, Swampland, Swampland M, Roofed Forest, Roofed Forest M, Mesa, Mesa (Bryce), Mesa Plateau F M, Mesa Plateau F, Mesa Plateau M, Mesa Plateau, Savanna, Savanna M, Savanna Plateau M, Savanna Plateau, DesertCoast, FrozenOcean, Jungle, JungleEdge, JungleEdge M, JungleHills, Jungle M, Jungle River, Island Beach, Steppe, Steppe Field, Grassland, Flower Grassland, Field
 
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.

@@ -263,7 +263,7 @@ SkyColor: #7BA5FF
 WaterColor: #FFFFFF
 
 # Biome grass color.
-GrassColor: #FFFFFF
+GrassColor: #8DB360
 
 # Whether the grass color is a multiplier.
 # If you set it to true, the color will be based on this value, the BiomeTemperature and the BiomeWetness.
@@ -271,7 +271,7 @@ GrassColor: #FFFFFF
 GrassColorIsMultiplier: true
 
 # Biome foliage color.
-FoliageColor: #FFFFFF
+FoliageColor: #8DB360
 
 # Whether the foliage color is a multiplier. See GrassColorIsMultiplier for details.
 FoliageColorIsMultiplier: true

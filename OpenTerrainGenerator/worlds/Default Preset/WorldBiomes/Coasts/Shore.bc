@@ -45,7 +45,7 @@ BiomeRarity: 100
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
-BiomeColor: #615103
+BiomeColor: #b5661d
 
 ####################
 # Isle biomes only #
@@ -81,13 +81,13 @@ BiomeIsBorder: Ocean
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Deep Ocean, FrozenOcean, FrozenRiver, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, TaigaHills, Extreme Hills M, Ice Plains, Cold Taiga, Cold Taiga M, Ice Mountains, Desert, Desert M, DesertHills, Mesa, Mesa Plateau, Mesa Plateau F, Mesa Plateau M, Mesa Plateau F M, Mesa (Bryce), Flower Grassland, DesertCoast, Jungle, JungleEdge, JungleEdge M, JungleHills, Jungle M, Jungle Beach, Jungle River, Island Beach, Birch Forest Hills, Birch Forest, Field, Forest, ForestHills, Grassland,  Woodland, Snowy Fir Forest, Fir Forest, Shield, Coast, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Alpine Lowland, Alpine Fir Forest
+NotBorderNear: Deep Ocean, FrozenOcean, FrozenRiver, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, TaigaHills, Extreme Hills M, Ice Plains, Cold Taiga, Cold Taiga M, Ice Mountains, Desert, Desert M, DesertHills, Mesa, Mesa Plateau, Mesa Plateau F, Mesa Plateau M, Mesa Plateau F M, Mesa (Bryce), Flower Grassland, Jungle, JungleEdge, JungleEdge M, JungleHills, Jungle M, Jungle Beach, Jungle River, Island Beach, Birch Forest Hills, Birch Forest, Field, Forest, ForestHills, Grassland, Woodland, Snowy Fir Forest, Fir Forest, Shield, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Alpine Lowland, Alpine Fir Forest, Extreme Hills Edge, Extreme Hills+ M, Coast
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 5
+BiomeSizeWhenBorder: 6
 
 
 #######################################################################
@@ -474,7 +474,7 @@ SpawnAmbientCreatures: []
 # a mob list from a vanilla biome.
 # NOTE: Only works for biomes with id's under < 255 (non-virtual biomes).
 # For virtual biomes the BiomeDictId is inherited via ReplaceToBiomeName.
-BiomeDictId: BEACH
+BiomeDictId: BEACH, COLD
 
 # Inherit the internal mobs list of another biome. Inherited mobs can be 
 # overridden using the SpawnMonsters, SpawnCreatures, SpawnWaterCreatures
