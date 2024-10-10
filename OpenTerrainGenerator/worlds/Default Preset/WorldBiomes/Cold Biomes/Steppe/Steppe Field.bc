@@ -65,7 +65,7 @@ IsleInBiome: Steppe
 BiomeSizeWhenIsle: 6
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 10
+BiomeRarityWhenIsle: 28
 
 ######################
 # Border biomes only #
