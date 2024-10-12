@@ -41,7 +41,7 @@ BiomeSize: 5
 #   50 rarity mean 1/11 chance than other
 # For isle biomes see the BiomeRarityWhenIsle setting below.
 # Doesn`t work on Ocean and River (frozen versions too) biomes when not added as normal biome.
-BiomeRarity: 4
+BiomeRarity: 3
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.

@@ -360,7 +360,6 @@ UnderWaterOre(SAND,7,10,100.0,DIRT,GRASS,STONE,GRAVEL)
 UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
-Tree(1,OakForestLarge4,1,Tree,9)
 Grass(Tallgrass,NotGrouped,10,100.0,GRASS,DIRT)
 #CustomObject(UseWorld)
 
