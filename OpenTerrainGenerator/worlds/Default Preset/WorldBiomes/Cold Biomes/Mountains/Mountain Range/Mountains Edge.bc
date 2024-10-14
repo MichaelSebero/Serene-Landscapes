@@ -16,8 +16,6 @@ BiomeExtends:
 # it won't be copied.
 ResourceInheritance: true
 
-ReplaceToBiomeName: biomesoplenty:alps_foothills
-
 #######################################################################
 # +-----------------------------------------------------------------+ #
 # |                         Biome placement                         | #
@@ -46,7 +44,7 @@ BiomeRarity: 100
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
-BiomeColor: #72789A
+BiomeColor: #343434
 
 ####################
 # Isle biomes only #

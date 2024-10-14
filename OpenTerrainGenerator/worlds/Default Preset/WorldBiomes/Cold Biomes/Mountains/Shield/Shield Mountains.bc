@@ -16,8 +16,6 @@ BiomeExtends:
 # it won't be copied.
 ResourceInheritance: true
 
-ReplaceToBiomeName: biomesoplenty:alps
-
 #######################################################################
 # +-----------------------------------------------------------------+ #
 # |                         Biome placement                         | #
@@ -42,11 +40,11 @@ BiomeSize: 4
 #   50 rarity mean 1/11 chance than other
 # For isle biomes see the BiomeRarityWhenIsle setting below.
 # Doesn`t work on Ocean and River (frozen versions too) biomes when not added as normal biome.
-BiomeRarity: 100
+BiomeRarity: 60
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
-BiomeColor: #add8e6
+BiomeColor: #2a2a2a
 
 ####################
 # Isle biomes only #
@@ -90,6 +88,7 @@ NotBorderNear: Jungle M, Jungle River, Jungle, JungleEdge M, JungleEdge, JungleH
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
 BiomeSizeWhenBorder: 8
 
+ReplaceToBiomeName: biomesoplenty:shield
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -100,7 +99,7 @@ BiomeSizeWhenBorder: 8
 # BiomeHeight mean how much height will be added in terrain generation
 # It is double value from -10.0 to 10.0
 # Value 0.0 equivalent half of map height with all other default settings
-BiomeHeight: 8.0
+BiomeHeight: 7.0
 
 # Biome volatility.
 BiomeVolatility: 20.0

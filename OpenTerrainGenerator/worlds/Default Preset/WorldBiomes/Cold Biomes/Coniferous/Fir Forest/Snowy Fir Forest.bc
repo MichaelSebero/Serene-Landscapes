@@ -16,7 +16,7 @@ BiomeExtends:
 # it won't be copied.
 ResourceInheritance: true
 
-ReplaceToBiomeName: biomesoplenty:woodland
+ReplaceToBiomeName: biomesoplenty:snowy_coniferous_forest
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -42,11 +42,11 @@ BiomeSize: 4
 #   50 rarity mean 1/11 chance than other
 # For isle biomes see the BiomeRarityWhenIsle setting below.
 # Doesn`t work on Ocean and River (frozen versions too) biomes when not added as normal biome.
-BiomeRarity: 40
+BiomeRarity: 5
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
-BiomeColor: #4d7b1e
+BiomeColor: #bfdfed
 
 ####################
 # Isle biomes only #
@@ -57,16 +57,16 @@ BiomeColor: #4d7b1e
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome:
+IsleInBiome: Cold Taiga
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 8
+BiomeSizeWhenIsle: 7
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 95
+BiomeRarityWhenIsle: 97
 
 ######################
 # Border biomes only #
@@ -78,11 +78,11 @@ BiomeRarityWhenIsle: 95
 # List of biomes this biome can be a border of.
 # For example, the Beach biome is a border on the Ocean biome, so
 # it can spawn anywhere on the border of an ocean.
-BiomeIsBorder:
+BiomeIsBorder: 
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Ice Plains, Cold Taiga, Cold Taiga M, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Extreme Hills M, Cold Beach, FrozenOcean, Cold Taiga Hills, Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle,  Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Extreme Hills Edge, Extreme Hills+ M, Alpine Fir Forest, Alpine Mountains Edge, Alpine Mountains M, Alpine Mountains
+NotBorderNear: Jungle M, JungleEdge M, Jungle River, JungleEdge, JungleHills, Jungle, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Field, Grassland, Flower Grassland, Forest, Birch Forest, Birch Forest Hills
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -103,7 +103,7 @@ BiomeSizeWhenBorder: 8
 BiomeHeight: 0.5
 
 # Biome volatility.
-BiomeVolatility: 10.0
+BiomeVolatility: 20.0
 
 # Smooth radius between biomes. Must be between 0 and 32, inclusive. The resulting
 # smooth radius seems to be  (thisSmoothRadius + 1 + smoothRadiusOfBiomeOnOtherSide) * 4 .
@@ -249,12 +249,12 @@ CooledLavaBlock: STATIONARY_LAVA
 # When this value is around 0.2, snow will fall on mountain peaks above y=90.
 # When this value is around 0.1, the whole biome will be covered in snow and ice.
 # However, on default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeTemperature: 0.7
+BiomeTemperature: 0.0
 
 # Biome wetness. Float value from 0.0 to 1.0.
 # If this biome is a custom biome, and this value is set to 0, no rain will fall.
 # On default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeWetness: 0.8
+BiomeWetness: 0.4
 
 # Biome sky color.
 SkyColor: #7BA5FF
@@ -340,7 +340,6 @@ FoliageColorIsMultiplier: true
 # Vein resource: not in vanilla. Starts an area where ores will spawn. Can be slow, so use a low Rarity (smaller than 1).
 # CustomStructure resource: starts a BO3 structure in the chunk.
 
-CustomObject(SmallLake1,SmallLake2,SmallLake3,SmallLake4,SmallLake5,SmallLake6,SmallLake7,SmallLake8,SmallLake9,SmallLake10,SmallLake11,SmallLake12)
 Ore(DIRT,16,10,100.0,0,55,STONE)
 Ore(GRAVEL,16,8,100.0,0,55,STONE)
 Ore(STONE:1,33,10,100.0,0,79,STONE)
@@ -355,27 +354,14 @@ Ore(LAPIS_ORE,7,1,100.0,0,15,STONE)
 UnderGroundLake(25,60,2,5.0,0,49)
 Liquid(WATER,60,100.0,8,256,STONE,DIRT:0)
 Liquid(LAVA,10,100.0,8,128,STONE)
-#SmallLake(WATER,4,1.0,8,119)
+SmallLake(WATER,4,1.0,8,119)
 #SmallLake(LAVA,2,1.0,8,119)
 SmallLake(LAVA,2,8.0,6,50)
 UnderWaterOre(SAND,7,10,100.0,DIRT,GRASS,STONE,GRAVEL)
 UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
-CustomObject(OakFallenTree1,OakFallenTree2,OakFallenTree3,OakFallenTree4)
-CustomObject(forestrock1,forestrock2,forestrock3,forestrock4)
-Grass(Tallgrass,NotGrouped,30,100.0,GRASS,DIRT)
-Plant(Poppy,4,100.0,0,128,GRASS,DIRT)
-Plant(Dandelion,2,100.0,0,128,GRASS,DIRT)
-Plant(Lilac,2,100.0,0,128,GRASS,DIRT)
-Plant(RoseBush,2,100.0,0,128,GRASS,DIRT)
-Plant(Peony,2,100.0,0,128,GRASS,DIRT)
-Plant(RedMushroom,1,12.0,0,128,GRASS,DIRT)
-Plant(BrownMushroom,1,25.0,0,128,GRASS,DIRT)
-Plant(PUMPKIN,1,3.0,0,128,GRASS)
-Reed(SUGAR_CANE_BLOCK,3,100.0,0,128,GRASS,DIRT,SAND)
 #CustomObject(UseWorld)
-Plant(SNOW,80,60.0,160,256,GRASS,DIRT,LEAVES,STONE:0,GRAVEL,PACKED_ICE,SNOW_BLOCK,ICE)
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -428,7 +414,7 @@ OceanMonumentsEnabled: false
 NetherFortressesEnabled: true
 
 # The village type in this biome. Can be wood, sandstone, taiga, savanna or disabled.
-VillageType: disabled
+VillageType: taiga
 
 # The mineshaft type in this biome. Can be normal, mesa or disabled.
 MineshaftType: normal
@@ -487,12 +473,12 @@ SpawnAmbientCreatures: []
 # a mob list from a vanilla biome.
 # NOTE: Only works for biomes with id's under < 255 (non-virtual biomes).
 # For virtual biomes the BiomeDictId is inherited via ReplaceToBiomeName.
-BiomeDictId: FOREST
+BiomeDictId: COLD, CONIFEROUS, FOREST
 
 # Inherit the internal mobs list of another biome. Inherited mobs can be 
 # overridden using the SpawnMonsters, SpawnCreatures, SpawnWaterCreatures
 # and SpawnAmbientCreatures settings. Any mob type defined using those settings
 # will override inherited mob settings for the same mob.
 # Use this setting to inherit modded mobs from vanilla biomes (see also: BiomeDictId)
-InheritMobsBiomeName: Forest
+InheritMobsBiomeName: Mega Spruce Taiga
 

@@ -16,7 +16,7 @@ BiomeExtends:
 # it won't be copied.
 ResourceInheritance: true
 
-ReplaceToBiomeName: biomesoplenty:alps
+ReplaceToBiomeName: biomesoplenty:shield
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -42,11 +42,11 @@ BiomeSize: 4
 #   50 rarity mean 1/11 chance than other
 # For isle biomes see the BiomeRarityWhenIsle setting below.
 # Doesn`t work on Ocean and River (frozen versions too) biomes when not added as normal biome.
-BiomeRarity: 25
+BiomeRarity: 60
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
-BiomeColor: #c1e1ec
+BiomeColor: #343434
 
 ####################
 # Isle biomes only #
@@ -57,7 +57,7 @@ BiomeColor: #c1e1ec
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome:
+IsleInBiome: 
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -78,17 +78,17 @@ BiomeRarityWhenIsle: 97
 # List of biomes this biome can be a border of.
 # For example, the Beach biome is a border on the Ocean biome, so
 # it can spawn anywhere on the border of an ocean.
-BiomeIsBorder:
+BiomeIsBorder: Alpine Mountains
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle M, Jungle River, Jungle, JungleEdge M, JungleEdge, JungleHills, Oasis, Tropical Rainforest, Island Beach, Field, Steppe Field
+NotBorderNear: Extreme Hills+, Taiga, Extreme Hills M, Extreme Hills+ M, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Ice Plains, Cold Taiga, Ice Plains Spikes, Cold Taiga M, Ice Mountains, Savanna, Desert, TaigaHills, Mesa, Jungle M, Jungle River, Jungle, JungleEdge M, JungleEdge, JungleHills, Oasis, Tropical Rainforest, Island Beach, Field, Steppe Field
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 8
+BiomeSizeWhenBorder: 6
 
 
 #######################################################################
@@ -100,10 +100,10 @@ BiomeSizeWhenBorder: 8
 # BiomeHeight mean how much height will be added in terrain generation
 # It is double value from -10.0 to 10.0
 # Value 0.0 equivalent half of map height with all other default settings
-BiomeHeight: 10.0
+BiomeHeight: 7.0
 
 # Biome volatility.
-BiomeVolatility: 40.0
+BiomeVolatility: 20.0
 
 # Smooth radius between biomes. Must be between 0 and 32, inclusive. The resulting
 # smooth radius seems to be  (thisSmoothRadius + 1 + smoothRadiusOfBiomeOnOtherSide) * 4 .
@@ -207,7 +207,7 @@ GroundBlock: DIRT
 
 # Alternatively, you can use Mesa, MesaForest or MesaBryce to get blocks
 # like the blocks found in the Mesa biomes.
-SurfaceAndGroundControl: GRAVEL, GRAVEL, -1.0, GRASS, DIRT, 2.0, GRAVEL, GRAVEL, 10.0 
+SurfaceAndGroundControl: 
 
 # Replace Variable: (blockFrom,blockTo[:blockDataTo][,minHeight,maxHeight])
 # Example :
@@ -362,7 +362,6 @@ UnderWaterOre(SAND,7,10,100.0,DIRT,GRASS,STONE,GRAVEL)
 UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
-CustomObject(giantboulder1,giantboulder2,giantboulder3,giantboulder4,giantboulder5,giantboulder6,giantboulder7,giantboulder8,giantboulder9)
 Grass(Tallgrass,NotGrouped,10,100.0,GRASS,DIRT)
 Plant(Dandelion,4,100.0,0,128,GRASS,DIRT)
 Plant(PUMPKIN,1,3.0,0,128,GRASS)
@@ -478,12 +477,12 @@ SpawnAmbientCreatures: []
 # a mob list from a vanilla biome.
 # NOTE: Only works for biomes with id's under < 255 (non-virtual biomes).
 # For virtual biomes the BiomeDictId is inherited via ReplaceToBiomeName.
-BiomeDictId: MOUNTAIN, FOREST, SPARSE
+BiomeDictId: MOUNTAIN
 
 # Inherit the internal mobs list of another biome. Inherited mobs can be 
 # overridden using the SpawnMonsters, SpawnCreatures, SpawnWaterCreatures
 # and SpawnAmbientCreatures settings. Any mob type defined using those settings
 # will override inherited mob settings for the same mob.
 # Use this setting to inherit modded mobs from vanilla biomes (see also: BiomeDictId)
-InheritMobsBiomeName: Extreme Hills+ M
+InheritMobsBiomeName: Extreme Hills Edge
 
