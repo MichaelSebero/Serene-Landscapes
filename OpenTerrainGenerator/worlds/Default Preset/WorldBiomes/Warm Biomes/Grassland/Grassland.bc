@@ -56,16 +56,16 @@ BiomeColor: #739848
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: Forest, Birch Forest
+IsleInBiome:
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 6
+BiomeSizeWhenIsle: 7
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 97
+BiomeRarityWhenIsle: 25
 
 ######################
 # Border biomes only #
@@ -77,17 +77,17 @@ BiomeRarityWhenIsle: 97
 # List of biomes this biome can be a border of.
 # For example, the Beach biome is a border on the Ocean biome, so
 # it can spawn anywhere on the border of an ocean.
-BiomeIsBorder:
+BiomeIsBorder: Forest
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Ice Mountains, Ice Plains, Snowy Fir Forest, FrozenRiver, FrozenOcean, Shore, Steppe Field
+NotBorderNear: Jungle Edge, Jungle Hills, Jungle, Jungle River, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Ice Mountain, Ice Plains, Snowy Fir Forest, FrozenRiver, FrozenOcean, Shore, Steppe Field, Beach, Tropical Rainforest
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 5
+BiomeSizeWhenBorder: 8
 
 
 #######################################################################

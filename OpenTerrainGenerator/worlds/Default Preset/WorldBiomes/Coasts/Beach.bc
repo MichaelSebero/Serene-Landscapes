@@ -81,13 +81,13 @@ BiomeIsBorder: Ocean
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Deep Ocean, FrozenOcean, FrozenRiver, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, TaigaHills, Extreme Hills M, Ice Plains, Cold Taiga, Cold Taiga M, Ice Mountains, Cold Beach, Desert, Desert M, DesertHills, Mesa, Mesa Plateau, Mesa Plateau F, Mesa Plateau M, Mesa Plateau F M, Mesa (Bryce), Extreme Hills Edge, Jungle M, Jungle River, Jungle, JungleEdge M, JungleEdge, JungleHills, Tropical Rainforest, Oasis, Island Beach, Shield, Fir Forest, Maple Forest, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Autumnal Woods Hills, Shore, Mountains, Mountains Edge, Mountains M
+NotBorderNear: Deep Ocean, FrozenOcean, FrozenRiver, Extreme Hills, Extreme Hills+, Extreme Hills M, Ice Plains, Cold Taiga, Cold Taiga M, Ice Mountain, Cold Beach, Desert, Desert M, DesertHills, Mesa, Mesa Plateau, Mesa Plateau F, Mesa Plateau M, Mesa Plateau F M, Mesa (Bryce), Extreme Hills Edge, Jungle M, Jungle River, Jungle, Jungle Edge M, Jungle Edge, Tropical Rainforest, Oasis, Island Beach, Shield, Fir Forest, Maple Forest, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Autumnal Woods Hills, Shore, Steppe Mountain, Steppe Mountain Edge, Steppe Mountain M, Stone Beach, Seaboard, Cold Forest Hills, Cold Forest, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Taiga M, Taiga, Taiga Hills, Steppe, Steppe Field, Boreal Forest, Alpine Lowland, Alpine Fir Forest, Cold Taiga Hills, Steppe Lowland, Jungle Hills, Steppe Mountain Edge, Steppe Mountain M, Steppe Mountain, Grassland, Flower Grassland, Lake, Frozen Lake
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 7
+BiomeSizeWhenBorder: 8
 
 
 #######################################################################
@@ -187,8 +187,8 @@ RiverCustomHeightControl: 40.0, 40.0, 40.0, 40.0, 40.0, 35.0, 25.0, 20.0, 0.0, 0
 # Change this to generate something else than stone in the biome.
 StoneBlock: STONE
 
-# Surface block, usually GRASS.
-SurfaceBlock: GRAVEL
+# Surface block, usually SAND.
+SurfaceBlock: SAND
 
 # Block from stone to surface, like dirt in most biomes.
 GroundBlock: SAND
@@ -198,7 +198,7 @@ GroundBlock: SAND
 # Values near 0 are more common than values near -7 and 7. This setting is
 # used to change the surface block based on the noise value for the column.
 # Syntax: SurfaceBlockName,GroundBlockName,MaxNoise,[AnotherSurfaceBlockName,[AnotherGroundBlockName,MaxNoise[,...]]
-# Example: SurfaceAndGroundControl: STONE,STONE,-0.8,GRAVEL,STONE,0.0,DIRT,DIRT,10.0
+# Example: SurfaceAndGroundControl: STONE,STONE,-0.8,SAND,STONE,0.0,SAND,SAND,10.0
 #   When the noise is below -0.8, stone is the surface and ground block, between -0.8 and 0
 #   gravel with stone just below and between 0.0 and 10.0 there's only dirt.
 #   Because 10.0 is higher than the noise can ever get, the normal SurfaceBlock
@@ -210,9 +210,9 @@ SurfaceAndGroundControl:
 
 # Replace Variable: (blockFrom,blockTo[:blockDataTo][,minHeight,maxHeight])
 # Example :
-#   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
+#   ReplacedBlocks: (SAND,SAND,100,127),(SAND,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: (GRAVEL,SAND,0,67),(GRAVEL,GRASS,68,256),(SANDSTONE,STONE,68,256),(SAND,DIRT,68,256)
+ReplacedBlocks: (GRASS,SAND,62,65),(DIRT,SAND,62,65),(GRAVEL,SAND,62,65)
 
 ################################
 # Water / Lava & Frozen States #
@@ -339,8 +339,8 @@ FoliageColorIsMultiplier: true
 # Vein resource: not in vanilla. Starts an area where ores will spawn. Can be slow, so use a low Rarity (smaller than 1).
 # CustomStructure resource: starts a BO3 structure in the chunk.
 
-Ore(DIRT,16,10,100.0,0,55,STONE)
-Ore(GRAVEL,16,8,100.0,0,55,STONE)
+Ore(SAND,16,10,100.0,0,55,STONE)
+Ore(SAND,16,8,100.0,0,55,STONE)
 Ore(STONE:1,33,10,100.0,0,79,STONE)
 Ore(STONE:3,33,10,100.0,0,79,STONE)
 Ore(STONE:5,33,10,100.0,0,79,STONE)
@@ -351,17 +351,15 @@ Ore(REDSTONE_ORE,8,8,100.0,0,15,STONE)
 Ore(DIAMOND_ORE,8,1,100.0,0,15,STONE)
 Ore(LAPIS_ORE,7,1,100.0,0,15,STONE)
 UnderGroundLake(25,60,2,5.0,0,49)
-Liquid(WATER,60,100.0,8,256,STONE,DIRT:0)
+Liquid(WATER,60,100.0,8,256,STONE,SAND:0)
 Liquid(LAVA,10,100.0,8,128,STONE)
 #SmallLake(WATER,4,1.0,8,119)
 #SmallLake(LAVA,2,1.0,8,119)
 SmallLake(LAVA,2,8.0,6,50)
-UnderWaterOre(SAND,7,10,100.0,DIRT,GRASS,STONE,GRAVEL)
-UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
-UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
+UnderWaterOre(SAND,7,10,100.0,SAND,SAND,STONE,SAND)
+UnderWaterOre(CLAY,4,1,100.0,SAND,CLAY)
+UnderWaterOre(SAND,6,1,100.0,SAND,SAND)
 Dungeon(8,100.0,0,128)
-Grass(Tallgrass,NotGrouped,10,100.0,GRASS,DIRT)
-Plant(Dandelion,2,100.0,0,128,GRASS,DIRT)
 #CustomObject(UseWorld)
 
 #######################################################################

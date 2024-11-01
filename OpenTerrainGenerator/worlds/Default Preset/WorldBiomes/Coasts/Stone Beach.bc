@@ -81,14 +81,14 @@ BiomeIsBorder: Ocean
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Cold Beach, Beach, Deep Ocean, Desert, Desert M, Swampland, Swampland M, Roofed Forest, Roofed Forest M, Mesa, Mesa (Bryce), Mesa Plateau F M, Mesa Plateau F, Mesa Plateau M, Mesa Plateau, Savanna, Savanna M, Savanna Plateau M, Savanna Plateau, DesertCoast, FrozenOcean, Jungle, JungleEdge, JungleEdge M, JungleHills, Jungle M, Jungle River, Island Beach, Steppe, Steppe Field, Grassland, Flower Grassland, Field
+NotBorderNear: Cold Beach, Beach, Deep Ocean, Desert, Desert M, Swampland, Swampland M, Roofed Forest, Roofed Forest M, Mesa, Mesa (Bryce), Mesa Plateau F M, Mesa Plateau F, Mesa Plateau M, Mesa Plateau, Savanna, Savanna M, Savanna Plateau M, Savanna Plateau, DesertCoast, FrozenOcean, Jungle, Jungle Edge, Jungle Edge M, Jungle Hills, Jungle M, Jungle River, Island Beach, Steppe, Steppe Field, Grassland, Flower Grassland, Steppe Lowland, Coast, Cold Forest, Cold Forest Hills, Fir Forest, Snowy Fir Forest, Extreme Hills, Extreme Hills+, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Taiga M, Taiga, Taiga Hills, Oasis, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Boreal Forest, Tropical Rainforest, Alpine Lowland, Alpine Fir Forest, Cold Taiga Hills, Cold Taiga M, Cold Taiga, Ice Plains, Steppe Mountain Edge, Steppe Mountain M, Steppe Mountain, Lake, Frozen Lake
 
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 8
+BiomeSizeWhenBorder: 9
 
 
 #######################################################################
@@ -213,7 +213,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: None
+ReplacedBlocks: (GRASS,GRAVEL,62,65),(DIRT,GRAVEL,62,65),(SAND,GRAVEL,62,65)
 
 ################################
 # Water / Lava & Frozen States #
@@ -357,13 +357,11 @@ Liquid(LAVA,10,100.0,8,128,STONE)
 SmallLake(WATER,4,1.0,8,119)
 #SmallLake(LAVA,2,1.0,8,119)
 SmallLake(LAVA,2,8.0,6,50)
-UnderWaterOre(SAND,7,10,100.0,DIRT,GRASS,STONE,GRAVEL)
+UnderWaterOre(GRAVEL,7,10,100.0,GRAVEL,GRAVEL,STONE,GRAVEL)
 UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
 CustomObject(giantboulder1,giantboulder2,giantboulder3,giantboulder4,giantboulder5,giantboulder6,giantboulder7,giantboulder8,giantboulder9)
-Grass(Tallgrass,NotGrouped,10,100.0,GRASS,DIRT)
-Plant(Dandelion,2,100.0,0,128,GRASS,DIRT)
 #CustomObject(UseWorld)
 
 #######################################################################

@@ -56,16 +56,16 @@ BiomeColor: #056621
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome:
+IsleInBiome: Grassland
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 8
+BiomeSizeWhenIsle: 4
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 95
+BiomeRarityWhenIsle: 98
 
 ######################
 # Border biomes only #
@@ -81,13 +81,13 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Ice Plains, Cold Taiga, Cold Taiga M, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Extreme Hills M, Cold Beach, FrozenOcean, Cold Taiga Hills, Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle,  Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Extreme Hills Edge, Extreme Hills+ M
+NotBorderNear: Ice Plains, Cold Taiga, Cold Taiga M, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Extreme Hills M, Cold Beach, FrozenOcean, Cold Taiga Hills, Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Extreme Hills Edge, Extreme Hills+ M, Ice Mountain
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 8
+BiomeSizeWhenBorder: 5
 
 
 #######################################################################

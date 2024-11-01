@@ -81,13 +81,13 @@ BiomeIsBorder: Ocean
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Autumnal Woods Hills, Autumnal Woods, Maple Forest, Boreal Forest, Cold Beach, Cold Taiga Hills, Cold Taiga M, Cold Taiga, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills+, Extreme Hills, Fir Forest, River, FrozenRiver, Ice Mountains, Ice Plains, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Shield, Shrubland, Snowy Fir Forest, Taiga M, Taiga, TaigaHills, Beach, FrozenOcean, Birch Forest Hills, Birch Forest, Field, Forest, ForestHills, Grassland, Flower Grassland, Woodland, Coast, Stone Beach, Deep Ocean, Steppe, Steppe Field, Shore, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Alpine Lowland, Alpine Fir Forest, Mountains, Mountains Edge, Mountains M
+NotBorderNear: Autumnal Woods Hills, Autumnal Woods, Maple Forest, Boreal Forest, Cold Beach, Cold Taiga Hills, Cold Taiga M, Cold Taiga, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills+, Extreme Hills, Fir Forest, River, FrozenRiver, Ice Mountain, Ice Plains, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Shield, Shrubland, Snowy Fir Forest, Taiga M, Taiga, Taiga Hills, Beach, FrozenOcean, Birch Forest Hills, Birch Forest, Steppe Lowland, Forest, Forest Hills, Grassland, Flower Grassland, Woodland, Coast, Stone Beach, Deep Ocean, Steppe, Steppe Field, Shore, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Alpine Lowland, Alpine Fir Forest, Steppe Mountain, Steppe Mountain Edge, Steppe Mountain M, Cold Forest, Seaboard, Lake, Frozen Lake
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 7
+BiomeSizeWhenBorder: 10
 
 
 #######################################################################
@@ -212,7 +212,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: (GRAVEL,SAND,0,67),(GRAVEL,GRASS,68,256),(SANDSTONE,STONE,68,256),(SAND,DIRT,68,256)
+ReplacedBlocks: (GRASS,SAND,62,65),(DIRT,SAND,62,65),(GRAVEL,SAND,62,65)
 
 ################################
 # Water / Lava & Frozen States #

@@ -56,16 +56,16 @@ BiomeColor: #ffd700
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: Grassland
+IsleInBiome:
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 6
+BiomeSizeWhenIsle: 7
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 28
+BiomeRarityWhenIsle: 60
 
 ######################
 # Border biomes only #
@@ -81,7 +81,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle, Ice Plains, FrozenRiver, Cold Beach, FrozenOcean, Ice Mountains, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Mega Taiga, Mega Taiga Hills, Taiga, TaigaHills, Taiga M, Extreme Hills+, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills, Mega Spruce Taiga, Mega Spruce Taiga Hills, Shield, Beach, Forest, ForestHills, Birch Forest Hills, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Snowy Fir Forest, Shore, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Alpine Lowland
+NotBorderNear: Jungle M, Jungle Edge M, Jungle River, Jungle Beach, Jungle Edge, Jungle Hills, Jungle, Ice Plains, FrozenRiver, Cold Beach, FrozenOcean, Ice Mountain, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Mega Taiga, Mega Taiga Hills, Taiga, Taiga Hills, Taiga M, Extreme Hills+, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills, Mega Spruce Taiga, Mega Spruce Taiga Hills, Shield, Beach, Forest, Forest Hills, Birch Forest Hills, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Snowy Fir Forest, Shore, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Alpine Lowland
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

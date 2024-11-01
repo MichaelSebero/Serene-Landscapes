@@ -77,11 +77,11 @@ BiomeRarityWhenIsle: 97
 # List of biomes this biome can be a border of.
 # For example, the Beach biome is a border on the Ocean biome, so
 # it can spawn anywhere on the border of an ocean.
-BiomeIsBorder: Cold Taiga
+BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Ice Plains, Cold Taiga M, Ice Mountains, Cold Taiga Hills, Cold Taiga M, Ocean, Beach, FrozenRiver, FrozenOcean, Cold Beach, Mega Spruce Taiga, Jungle M, JungleEdge M, Jungle River, JungleEdge, JungleHills, Jungle, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau
+NotBorderNear: Ice Plains, Cold Taiga M, Ice Mountain, Cold Taiga Hills, Cold Taiga M, Ocean, Beach, FrozenRiver, FrozenOcean, Cold Beach, Mega Spruce Taiga, Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Forest
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

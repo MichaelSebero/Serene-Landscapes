@@ -81,7 +81,7 @@ BiomeIsBorder: Ocean
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Deep Ocean, FrozenOcean, FrozenRiver, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, TaigaHills, Extreme Hills M, Ice Plains, Cold Taiga, Cold Taiga M, Ice Mountains, Desert, Desert M, DesertHills, Mesa, Mesa Plateau, Mesa Plateau F, Mesa Plateau M, Mesa Plateau F M, Mesa (Bryce), Flower Grassland, Jungle, JungleEdge, JungleEdge M, JungleHills, Jungle M, Jungle Beach, Jungle River, Island Beach, Birch Forest Hills, Birch Forest, Field, Forest, ForestHills, Grassland, Woodland, Snowy Fir Forest, Fir Forest, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Alpine Lowland, Alpine Fir Forest, Extreme Hills Edge, Extreme Hills+ M, Coast, Shield, Mountains, Mountains Edge, Mountains M
+NotBorderNear: Deep Ocean, FrozenOcean, FrozenRiver, Taiga, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Taiga Hills, Ice Plains, Cold Taiga, Cold Taiga M, Ice Mountain, Desert, Desert M, DesertHills, Mesa, Mesa Plateau, Mesa Plateau F, Mesa Plateau M, Mesa Plateau F M, Mesa (Bryce), Flower Grassland, Jungle, Jungle Edge, Jungle Edge M, Jungle Hills, Jungle M, Jungle Beach, Jungle River, Island Beach, Birch Forest Hills, Birch Forest, Forest, Forest Hills, Grassland, Woodland, Snowy Fir Forest, Fir Forest, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Alpine Lowland, Alpine Fir Forest, Extreme Hills+ M, Coast, Shield, Steppe Mountain, Steppe Mountain Edge, Steppe Mountain M, Extreme Hills, Extreme Hills+, Extreme Hills Edge, Extreme Hills M, Oasis, Tropical Rainforest, Boreal Forest, Cold Taiga Hills, Seaboard, Beach, Lake, Frozen Lake
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -212,7 +212,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: 
+ReplacedBlocks: (GRASS,GRAVEL,62,65),(DIRT,GRAVEL,62,65),(SAND,GRAVEL,62,65)
 
 ################################
 # Water / Lava & Frozen States #
@@ -248,12 +248,9 @@ CooledLavaBlock: STATIONARY_LAVA
 # When this value is around 0.2, snow will fall on mountain peaks above y=90.
 # When this value is around 0.1, the whole biome will be covered in snow and ice.
 # However, on default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeTemperature: 0.6
+BiomeTemperature: 0.475
 
-# Biome wetness. Float value from 0.0 to 1.0.
-# If this biome is a custom biome, and this value is set to 0, no rain will fall.
-# On default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeWetness: 0.4
+BiomeWetness: 0.3
 
 # Biome sky color.
 SkyColor: #7BA5FF
@@ -262,18 +259,18 @@ SkyColor: #7BA5FF
 WaterColor: #FFFFFF
 
 # Biome grass color.
-GrassColor: #FFFFFF
+GrassColor: #BDB04F
 
 # Whether the grass color is a multiplier.
 # If you set it to true, the color will be based on this value, the BiomeTemperature and the BiomeWetness.
 # If you set it to false, the grass color will be just this color.
-GrassColorIsMultiplier: true
+GrassColorIsMultiplier: false
 
 # Biome foliage color.
-FoliageColor: #FFFFFF
+FoliageColor: #BDB04F
 
 # Whether the foliage color is a multiplier. See GrassColorIsMultiplier for details.
-FoliageColorIsMultiplier: true
+FoliageColorIsMultiplier: false
 
 
 #######################################################################
@@ -361,7 +358,6 @@ UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
 Grass(Tallgrass,NotGrouped,10,100.0,GRASS,DIRT)
-Plant(Dandelion,2,100.0,0,128,GRASS,DIRT)
 #CustomObject(UseWorld)
 
 #######################################################################

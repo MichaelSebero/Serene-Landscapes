@@ -33,7 +33,7 @@ ResourceInheritance: true
 #   Isle biomes:   BiomeSizeWhenIsle (see below)
 #   Border biomes: BiomeSizeWhenBorder (see below)
 #   River biomes:  RiverSize (see WorldConfig)
-BiomeSize: 6
+BiomeSize: 4
 
 # Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
 # Example for normal biome :
@@ -41,7 +41,7 @@ BiomeSize: 6
 #   50 rarity mean 1/11 chance than other
 # For isle biomes see the BiomeRarityWhenIsle setting below.
 # Doesn`t work on Ocean and River (frozen versions too) biomes when not added as normal biome.
-BiomeRarity: 4
+BiomeRarity: 10
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
@@ -56,16 +56,16 @@ BiomeColor: #5d340f
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: Steppe
+IsleInBiome: Steppe, Steppe Lowland
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 7
+BiomeSizeWhenIsle: 5
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 30
+BiomeRarityWhenIsle: 58
 
 ######################
 # Border biomes only #
@@ -81,7 +81,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle, Ice Plains, FrozenRiver, Cold Beach, Ice Mountains, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Mega Taiga, Mega Taiga Hills, Taiga, TaigaHills, Taiga M, Extreme Hills+, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills, Mega Spruce Taiga, Mega Spruce Taiga Hills, Shield, Coast, Beach, Forest, ForestHills, Birch Forest Hills, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Snowy Fir Forest, Forest, ForestHills, Birch Forest, Birch Forest Hills, Field, Woodland, FrozenOcean, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Alpine Lowland
+NotBorderNear: Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River, Ice Plains, FrozenRiver, Cold Beach, Ice Mountain, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Mega Taiga, Mega Taiga Hills, Taiga, Taiga Hills, Taiga M, Extreme Hills+, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills, Mega Spruce Taiga, Mega Spruce Taiga Hills, Shield, Coast, Beach, Forest, Forest Hills, Birch Forest Hills, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Snowy Fir Forest, Forest, Forest Hills, Birch Forest, Birch Forest Hills, Woodland, FrozenOcean, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Alpine Lowland, Steppe Mountain, Steppe Mountain M, Steppe Mountain, Steppe Mountain Edge
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -248,12 +248,9 @@ CooledLavaBlock: STATIONARY_LAVA
 # When this value is around 0.2, snow will fall on mountain peaks above y=90.
 # When this value is around 0.1, the whole biome will be covered in snow and ice.
 # However, on default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeTemperature: 0.6
+BiomeTemperature: 0.475
 
-# Biome wetness. Float value from 0.0 to 1.0.
-# If this biome is a custom biome, and this value is set to 0, no rain will fall.
-# On default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeWetness: 0.4
+BiomeWetness: 0.3
 
 # Biome sky color.
 SkyColor: #7BA5FF
@@ -262,18 +259,18 @@ SkyColor: #7BA5FF
 WaterColor: #FFFFFF
 
 # Biome grass color.
-GrassColor: #FFFFFF
+GrassColor: #BDB04F
 
 # Whether the grass color is a multiplier.
 # If you set it to true, the color will be based on this value, the BiomeTemperature and the BiomeWetness.
 # If you set it to false, the grass color will be just this color.
-GrassColorIsMultiplier: true
+GrassColorIsMultiplier: false
 
 # Biome foliage color.
-FoliageColor: #FFFFFF
+FoliageColor: #BDB04F
 
 # Whether the foliage color is a multiplier. See GrassColorIsMultiplier for details.
-FoliageColorIsMultiplier: true
+FoliageColorIsMultiplier: false
 
 
 #######################################################################

@@ -34,7 +34,7 @@ ReplaceToBiomeName: biomesoplenty:maple_woods
 #   Isle biomes:   BiomeSizeWhenIsle (see below)
 #   Border biomes: BiomeSizeWhenBorder (see below)
 #   River biomes:  RiverSize (see WorldConfig)
-BiomeSize: 4
+BiomeSize: 5
 
 # Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
 # Example for normal biome :
@@ -82,7 +82,7 @@ BiomeIsBorder: Mega Taiga, Ice Plains, Extreme Hills+
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Mega Spruce Taiga, Mega Taiga Hills, Mega Spruce Taiga Hills, Cold Taiga, Cold Taiga M, Ice Mountains, Cold Taiga Hills, Cold Taiga M, Ocean, Beach, Extreme Hills, Savanna, Desert, TaigaHills, Cold Beach, FrozenRiver, Desert M, Jungle M, JungleEdge M, Jungle River, JungleEdge, JungleHills, Jungle, Island Beach, Tropical Rainforest, Oasis, FrozenOcean
+NotBorderNear: Mega Spruce Taiga, Mega Taiga Hills, Mega Spruce Taiga Hills, Cold Taiga, Cold Taiga M, Ice Mountain, Cold Taiga Hills, Cold Taiga M, Ocean, Beach, Extreme Hills, Savanna, Desert, Taiga Hills, Cold Beach, FrozenRiver, Desert M, Jungle M, Jungle Edge M, Jungle River, Jungle Edge, Jungle Hills, Jungle, Island Beach, Tropical Rainforest, Oasis, FrozenOcean
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -249,12 +249,12 @@ CooledLavaBlock: STATIONARY_LAVA
 # When this value is around 0.2, snow will fall on mountain peaks above y=90.
 # When this value is around 0.1, the whole biome will be covered in snow and ice.
 # However, on default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeTemperature: 0.27
+BiomeTemperature: 0.36
 
 # Biome wetness. Float value from 0.0 to 1.0.
 # If this biome is a custom biome, and this value is set to 0, no rain will fall.
 # On default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeWetness: 0.8
+BiomeWetness: 0.65
 
 # Biome sky color.
 SkyColor: #7BA5FF

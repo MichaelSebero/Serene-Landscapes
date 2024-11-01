@@ -82,7 +82,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle, JungleEdge, JungleEdge M, JungleHills, Jungle M, Island Beach, Jungle River, Tropical Rainforest, Oasis, FrozenOcean
+NotBorderNear: Jungle, Jungle Edge, Jungle Edge M, Jungle Hills, Jungle M, Island Beach, Jungle River, Tropical Rainforest, Oasis, FrozenOcean
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -249,12 +249,12 @@ CooledLavaBlock: STATIONARY_LAVA
 # When this value is around 0.2, snow will fall on mountain peaks above y=90.
 # When this value is around 0.1, the whole biome will be covered in snow and ice.
 # However, on default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeTemperature: 0.3
+BiomeTemperature: 0.47
 
 # Biome wetness. Float value from 0.0 to 1.0.
 # If this biome is a custom biome, and this value is set to 0, no rain will fall.
 # On default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeWetness: 0.8
+BiomeWetness: 0.5
 
 # Biome sky color.
 SkyColor: #7BA5FF
@@ -497,5 +497,5 @@ BiomeDictId: FOREST, COLD
 # and SpawnAmbientCreatures settings. Any mob type defined using those settings
 # will override inherited mob settings for the same mob.
 # Use this setting to inherit modded mobs from vanilla biomes (see also: BiomeDictId)
-InheritMobsBiomeName: Birch Forest
+InheritMobsBiomeName: Roofed Forest
 

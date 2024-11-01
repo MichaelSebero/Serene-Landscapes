@@ -32,7 +32,7 @@ ResourceInheritance: true
 #   Isle biomes:   BiomeSizeWhenIsle (see below)
 #   Border biomes: BiomeSizeWhenBorder (see below)
 #   River biomes:  RiverSize (see WorldConfig)
-BiomeSize: 3
+BiomeSize: 4
 
 # Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
 # Example for normal biome :
@@ -64,7 +64,7 @@ IsleInBiome: Ocean
 BiomeSizeWhenIsle: 4
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 25
+BiomeRarityWhenIsle: 1
 
 ######################
 # Border biomes only #
@@ -80,7 +80,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Cold Taiga, Birch Forest, Birch Forest Hills, Roofed Forest, Roofed Forest M, Stone Beach, Forest, Flower Grassland, Cold Taiga Hills, Cold Taiga M, Extreme Hills, Extreme Hills+, Extreme Hills Edge, Extreme Hills M, Mega Taiga Hills, Taiga, TaigaHills, Taiga M, Extreme Hills+ M, ForestHills, Mega Spruce Taiga, Mega Spruce Taiga Hills, Mega Taiga, Coast, Cold Beach, Ice Plains, Ice Mountains, FrozenRiver, FrozenOcean, Autumnal Woods, Maple Forest, Autumnal Woods Hills, Shrubland, Field, Fir Forest, Snowy Fir Forest, Woodland, Grassland, Boreal Forest, Alpine Mountains, Alpine Mountains Edge, Alpine Mountains M, Alpine Lowland, Alpine Fir Forest, Shore, Mountains, Mountains Edge, Mountains M
+NotBorderNear: Autumnal Woods Hills, Autumnal Woods, Maple Forest, Beach, Coast, Cold Beach, Frozen Seaboard, Seaboard, Shore, Stone Beach, Fir Forest, Snowy Fir Forest, Cold Mega Taiga, Cold Taiga Hills, Cold Taiga M, Cold Taiga, Ice Plains, Ice Mountain, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Taiga M, Taiga, Taiga Hills, Alpine Fir Forest, Alpine Lowland, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Shield, Shield Mountain, Shield Mountain Edge, Boreal Forest, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills+, Extreme Hills, Steppe Field, Steppe Lowland, Steppe, Steppe Mountain Edge, Steppe Mountain, Steppe Mountain M, Tropical Rainforest, Hell, Sky, The Void, Deep Ocean, FrozenOcean, Birch Forest Hills, Birch Forest, Forest Hills, Forest, Woodland, Field, Flower Grassland, Grassland, FrozenRiver, River, Mountain M, Mountain Edge, Mountain
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

@@ -82,7 +82,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Ice Plains, Cold Taiga, Cold Taiga M, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Extreme Hills M, Cold Beach, FrozenOcean, Cold Taiga Hills, Jungle M, JungleEdge M, Jungle River, Jungle Beach, JungleEdge, JungleHills, Jungle,  Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Extreme Hills Edge, Extreme Hills+ M, Alpine Fir Forest, Alpine Mountains Edge, Alpine Mountains M, Alpine Mountains
+NotBorderNear: Ice Plains, Cold Taiga, Cold Taiga M, Extreme Hills, Taiga, Extreme Hills+, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Extreme Hills M, Cold Beach, FrozenOcean, Cold Taiga Hills, Jungle M, Jungle Edge M, Jungle River, Jungle Beach, Jungle Edge, Jungle Hills, Jungle,  Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Extreme Hills Edge, Extreme Hills+ M, Alpine Fir Forest, Alpine Mountain Edge, Alpine Mountain M, Alpine Mountain
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
