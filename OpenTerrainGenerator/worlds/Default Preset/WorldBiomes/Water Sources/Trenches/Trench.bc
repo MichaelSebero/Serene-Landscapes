@@ -1,0 +1,154 @@
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+ResourceInheritance: true
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 8
+BiomeRarity: 95
+BiomeColor: #000033
+
+# Changed border settings to be compatible with ocean biomes
+BiomeIsBorder: Ocean, Deep Ocean
+NotBorderNear: 
+BiomeSizeWhenBorder: 8
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Significantly decreased height to create deep trenches
+BiomeHeight: -5.5
+
+# Increased volatility for steep trench walls
+BiomeVolatility: 1.8
+
+# Increased smooth radius for more gradual transitions
+SmoothRadius: 30
+
+# Modified to create deeper trenches
+MaxAverageHeight: 0.0
+MaxAverageDepth: -3.0
+
+# Adjusted volatility settings for more dramatic terrain
+Volatility1: -2.0
+Volatility2: -1.0
+VolatilityWeight1: 2.0
+VolatilityWeight2: 1.0
+
+# Custom height control modified for trench formation
+CustomHeightControl: -150.0, -150.0, -150.0, -150.0, -150.0, -140.0, -130.0, -120.0, -110.0, -100.0, -90.0, -80.0, -70.0, -60.0, -50.0, -40.0, -30.0, -25.0, -20.0, -15.0, -10.0, -8.0, -6.0, -4.0, -2.0, -1.0, -0.5, -0.25, 0.0, 0.0, 0.0, 0.0, 0.0
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Disabled river generation in trenches
+RiverBiome: None
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Changed surface blocks to deep ocean appropriate blocks
+StoneBlock: STONE
+SurfaceBlock: GRAVEL
+GroundBlock: STONE
+
+# Added varied floor composition
+SurfaceAndGroundControl: GRAVEL,STONE,-1.0,OBSIDIAN,STONE,-0.8,CLAY,STONE,-0.6
+
+# Modified block replacement for deep ocean environment
+ReplacedBlocks: (DIRT,GRAVEL,32,255),(GRASS,GRAVEL,32,255),(STONE,OBSIDIAN,0,32)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: false
+WaterLevelMax: 63
+WaterLevelMin: 0
+WaterBlock: STATIONARY_WATER
+IceBlock: ICE
+CooledLavaBlock: OBSIDIAN
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Adjusted for deep ocean environment
+BiomeTemperature: 0.5
+BiomeWetness: 0.5
+SkyColor: #7BA5FF
+WaterColor: #000033
+GrassColor: #FFFFFF
+GrassColorIsMultiplier: true
+FoliageColor: #FFFFFF
+FoliageColorIsMultiplier: true
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Modified resources for deep ocean trench environment
+Ore(DIRT,16,10,100.0,0,55,STONE)
+Ore(GRAVEL,16,8,100.0,0,55,STONE)
+Ore(STONE:1,33,10,100.0,0,79,STONE)
+Ore(STONE:3,33,10,100.0,0,79,STONE)
+Ore(STONE:5,33,10,100.0,0,79,STONE)
+Ore(COAL_ORE,17,20,100.0,0,127,STONE)
+Ore(IRON_ORE,9,20,100.0,0,63,STONE)
+Ore(GOLD_ORE,9,4,100.0,0,31,STONE)
+Ore(REDSTONE_ORE,8,8,100.0,0,15,STONE)
+Ore(DIAMOND_ORE,8,2,100.0,0,15,STONE)
+Ore(LAPIS_ORE,7,2,100.0,0,15,STONE)
+Ore(OBSIDIAN,12,1,100.0,0,31,STONE)
+
+# Added underwater-specific resources
+UnderWaterOre(CLAY,4,1,100.0,DIRT,STONE)
+UnderWaterOre(GRAVEL,6,1,100.0,DIRT,STONE)
+UnderWaterOre(OBSIDIAN,4,1,100.0,STONE)
+
+# Structure settings
+StrongholdsEnabled: false
+WoodLandMansionsEnabled: false
+OceanMonumentsEnabled: true
+NetherFortressesEnabled: false
+VillageType: disabled
+MineshaftType: normal
+MineshaftRarity: 0.3
+RareBuildingType: disabled
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: []
+SpawnCreatures: []
+SpawnWaterCreatures: [{"mob": "Squid", "weight": 10, "min": 4, "max": 4}]
+SpawnAmbientCreatures: []
+
+BiomeDictId: OCEAN
+
+InheritMobsBiomeName: Deep Ocean

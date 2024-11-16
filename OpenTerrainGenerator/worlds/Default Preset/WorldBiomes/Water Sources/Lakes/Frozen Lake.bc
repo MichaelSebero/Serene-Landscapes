@@ -33,7 +33,7 @@ ResourceInheritance: true
 #   Isle biomes:   BiomeSizeWhenIsle (see below)
 #   Border biomes: BiomeSizeWhenBorder (see below)
 #   River biomes:  RiverSize (see WorldConfig)
-BiomeSize: 4
+BiomeSize: 3
 
 # Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
 # Example for normal biome :
@@ -45,7 +45,7 @@ BiomeRarity: 100
 
 # The hexadecimal color value of this biome. Used in the output of the /otg map command,
 # and used in the input of BiomeMode: FromImage.
-BiomeColor: #628B17
+BiomeColor: #9090A0
 
 ####################
 # Isle biomes only #
@@ -56,16 +56,16 @@ BiomeColor: #628B17
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: 
+IsleInBiome: Cold Taiga, Ice Plains
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 6
+BiomeSizeWhenIsle: 4
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 97
+BiomeRarityWhenIsle: 35
 
 ######################
 # Border biomes only #
@@ -77,11 +77,11 @@ BiomeRarityWhenIsle: 97
 # List of biomes this biome can be a border of.
 # For example, the Beach biome is a border on the Ocean biome, so
 # it can spawn anywhere on the border of an ocean.
-BiomeIsBorder: Jungle
+BiomeIsBorder: Cold Beach
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Autumnal Woods Hills, Autumnal Woods, Maple Forest, Beach, Coast, Cold Beach, Frozen Seaboard, Seaboard, Shore, Stone Beach, Fir Forest, Snowy Fir Forest, Cold Mega Taiga, Cold Taiga Hills, Cold Taiga M, Cold Taiga, Ice Plains, Ice Mountain, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Taiga M, Taiga, Taiga Hills, Alpine Fir Forest, Alpine Lowland, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Shield, Shield Mountain, Shield Mountain Edge, Boreal Forest, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills+, Extreme Hills, Steppe Field, Steppe Lowland, Steppe, Steppe Mountain Edge, Steppe Mountain, Steppe Mountain M, Tropical Rainforest, Hell, Sky, The Void, Deep Ocean, FrozenOcean, Birch Forest Hills, Birch Forest, Forest Hills, Forest, Woodland, Field, Flower Grassland, Grassland, FrozenRiver, River, Mountain M, Mountain Edge, Mountain
+NotBorderNear: Jungle M, Jungle Edge M, Jungle River, Jungle Edge, Jungle Hills, Jungle,  Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Beach, Coast, Cold Beach, Island Beach, Seaboard, Shore, Stone Beach, Lake, River
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -99,10 +99,10 @@ BiomeSizeWhenBorder: 7
 # BiomeHeight mean how much height will be added in terrain generation
 # It is double value from -10.0 to 10.0
 # Value 0.0 equivalent half of map height with all other default settings
-BiomeHeight: 0.5
+BiomeHeight: -3.0
 
 # Biome volatility.
-BiomeVolatility: 10.0
+BiomeVolatility: 0.2
 
 # Smooth radius between biomes. Must be between 0 and 32, inclusive. The resulting
 # smooth radius seems to be  (thisSmoothRadius + 1 + smoothRadiusOfBiomeOnOtherSide) * 4 .
@@ -156,7 +156,7 @@ CustomHeightControl: 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 15.0, 10.0, 3.5, 
 
 # Only available when ImprovedRivers is set to false in the WorldConfig.
 # Sets which biome is used as the river biome.
-RiverBiome: Jungle River
+RiverBiome: FrozenRiver
 
 #######################
 # ImprovedRivers:true #
@@ -248,12 +248,12 @@ CooledLavaBlock: STATIONARY_LAVA
 # When this value is around 0.2, snow will fall on mountain peaks above y=90.
 # When this value is around 0.1, the whole biome will be covered in snow and ice.
 # However, on default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeTemperature: 0.95
+BiomeTemperature: 0.0
 
 # Biome wetness. Float value from 0.0 to 1.0.
 # If this biome is a custom biome, and this value is set to 0, no rain will fall.
 # On default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeWetness: 0.8
+BiomeWetness: 0.5
 
 # Biome sky color.
 SkyColor: #7BA5FF
@@ -360,11 +360,11 @@ UnderWaterOre(SAND,7,10,100.0,DIRT,GRASS,STONE,GRAVEL)
 UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
-Grass(Fern,NotGrouped,20,100.0,GRASS,DIRT)
-Grass(Tallgrass,NotGrouped,60,100.0,GRASS,DIRT)
-Plant(MELON_BLOCK,1,100.0,0,128,GRASS,DIRT)
-Plant(Poppy,4,100.0,0,128,GRASS,DIRT)
+Grass(Tallgrass,NotGrouped,10,100.0,GRASS,DIRT)
+Plant(Dandelion,2,100.0,0,128,GRASS,DIRT)
+Plant(PUMPKIN,1,3.0,0,128,GRASS)
 #CustomObject(UseWorld)
+CustomObject(GlacierSmall1,GlacierSmall2,GlacierSmall3,GlacierSmall4,GlacierSmall5,GlacierSmall6)
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -405,13 +405,13 @@ BiomeObjects:
 # regardless of these settings.
 # Disables strongholds for this biome. If there is no suitable biome nearby,
 # Minecraft will ignore this setting.
-StrongholdsEnabled: true
+StrongholdsEnabled: false
 
 # Whether a Woodland Mansion can be placed in this biome.
 WoodLandMansionsEnabled: false
 
 # Whether an Ocean Monument can be placed in this biome.
-OceanMonumentsEnabled: false
+OceanMonumentsEnabled: true
 
 # Whether a Nether Fortress can start in this biome. Might extend to neighbor biomes.
 NetherFortressesEnabled: true
@@ -428,7 +428,7 @@ MineshaftType: normal
 MineshaftRarity: 1.0
 
 # The type of the aboveground rare building in this biome. Can be desertPyramid, jungleTemple, swampHut, igloo or disabled.
-RareBuildingType: jungleTemple
+RareBuildingType: disabled
 
 
 #######################################################################
@@ -476,12 +476,12 @@ SpawnAmbientCreatures: []
 # a mob list from a vanilla biome.
 # NOTE: Only works for biomes with id's under < 255 (non-virtual biomes).
 # For virtual biomes the BiomeDictId is inherited via ReplaceToBiomeName.
-BiomeDictId: HOT, WET, JUNGLE, FOREST
+BiomeDictId: COLD, OCEAN, SNOWY
 
 # Inherit the internal mobs list of another biome. Inherited mobs can be 
 # overridden using the SpawnMonsters, SpawnCreatures, SpawnWaterCreatures
 # and SpawnAmbientCreatures settings. Any mob type defined using those settings
 # will override inherited mob settings for the same mob.
 # Use this setting to inherit modded mobs from vanilla biomes (see also: BiomeDictId)
-InheritMobsBiomeName: JungleEdge
+InheritMobsBiomeName: FrozenOcean
 

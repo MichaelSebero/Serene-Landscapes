@@ -80,7 +80,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River, Oasis, Island Beach, Steppe Field, Stone Beach, Shore, Coast, Ocean
+NotBorderNear: Jungle Hills, Jungle, Island Beach, Steppe Field, Stone Beach, Shore, Coast, Ocean
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -211,7 +211,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: None
+ReplacedBlocks:
 
 ################################
 # Water / Lava & Frozen States #

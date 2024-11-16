@@ -82,7 +82,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle, Jungle Edge, Jungle Edge M, Jungle Hills, Jungle M, Island Beach, Jungle River, Tropical Rainforest, Oasis, FrozenOcean
+NotBorderNear: Jungle Hills, Jungle, Island Beach, Oasis, FrozenOcean
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

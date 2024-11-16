@@ -56,16 +56,16 @@ BiomeColor: #A0A0A0
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: FrozenOcean
+IsleInBiome: Ice Plains, Cold Taiga, Cold Taiga M
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 6
+BiomeSizeWhenIsle: 5
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 97
+BiomeRarityWhenIsle: 60
 
 ######################
 # Border biomes only #
@@ -81,7 +81,7 @@ BiomeIsBorder: Cold Taiga, Cold Taiga M, Ice Plains
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Forest, Jungle M, Jungle Edge M, Jungle River, Jungle Edge, Jungle Hills, Jungle, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Steppe Lowland, Grassland, Flower Grassland, Birch Forest, Birch Forest Hills, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Forest Hills
+NotBorderNear: Forest, Jungle Hills, Jungle, Island Beach, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Steppe Lowland, Grassland, Flower Grassland, Birch Forest, Birch Forest Hills, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Forest Hills
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

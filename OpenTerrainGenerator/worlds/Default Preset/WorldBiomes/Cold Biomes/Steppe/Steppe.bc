@@ -81,7 +81,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Island Beach, Oasis, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Ice Mountain, Ice Plains, Snowy Fir Forest, FrozenRiver, Forest, Forest Hills, Birch Forest, Birch Forest Hills, Woodland, FrozenOcean, FrozenRiver, Coast, Beach
+NotBorderNear: Jungle Hills, Jungle, Island Beach, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Cold Taiga, Cold Taiga Hills, Cold Taiga M, Ice Mountain, Ice Plains, Snowy Fir Forest, FrozenRiver, Forest, Forest Hills, Birch Forest, Birch Forest Hills, Woodland, FrozenOcean, FrozenRiver, Coast, Beach
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -212,7 +212,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: None
+ReplacedBlocks: (SAND,GRAVEL,62,64)
 
 ################################
 # Water / Lava & Frozen States #

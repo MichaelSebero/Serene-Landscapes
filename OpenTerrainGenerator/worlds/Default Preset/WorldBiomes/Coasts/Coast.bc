@@ -89,7 +89,6 @@ NotBorderNear: Deep Ocean, FrozenOcean, FrozenRiver, Ice Plains, Cold Taiga, Col
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
 BiomeSizeWhenBorder: 5
 
-
 #######################################################################
 # +-----------------------------------------------------------------+ #
 # |                  Terrain height and volatility                  | #
@@ -212,7 +211,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: (GRASS,SAND,62,65),(DIRT,SAND,62,65),(GRAVEL,SAND,62,65)
+ReplacedBlocks: (GRASS,SAND,62,64),(DIRT,SAND,62,64),(GRAVEL,SAND,62,64)
 
 ################################
 # Water / Lava & Frozen States #

@@ -80,7 +80,7 @@ BiomeIsBorder: Shield
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Beach, Stone Beach, Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River
+NotBorderNear: Desert M, DesertRiver, Desert, DesertCoast, DesertHills, Savanna M, Savanna, Savanna Plateau M, Savanna Plateau, Beach, Stone Beach, Jungle Hills, Jungle, Island Beach
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

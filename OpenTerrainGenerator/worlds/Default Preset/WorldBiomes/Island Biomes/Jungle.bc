@@ -55,7 +55,7 @@ BiomeColor: #537B09
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: Ocean
+IsleInBiome: Deep Ocean
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -64,7 +64,7 @@ IsleInBiome: Ocean
 BiomeSizeWhenIsle: 4
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
-BiomeRarityWhenIsle: 1
+BiomeRarityWhenIsle: 48
 
 ######################
 # Border biomes only #
@@ -80,13 +80,13 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Autumnal Woods Hills, Autumnal Woods, Maple Forest, Beach, Coast, Cold Beach, Frozen Seaboard, Seaboard, Shore, Stone Beach, Fir Forest, Snowy Fir Forest, Cold Mega Taiga, Cold Taiga Hills, Cold Taiga M, Cold Taiga, Ice Plains, Ice Mountain, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Taiga M, Taiga, Taiga Hills, Alpine Fir Forest, Alpine Lowland, Alpine Mountain, Alpine Mountain Edge, Alpine Mountain M, Shield, Shield Mountain, Shield Mountain Edge, Boreal Forest, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills+, Extreme Hills, Steppe Field, Steppe Lowland, Steppe, Steppe Mountain Edge, Steppe Mountain, Steppe Mountain M, Tropical Rainforest, Hell, Sky, The Void, Deep Ocean, FrozenOcean, Birch Forest Hills, Birch Forest, Forest Hills, Forest, Woodland, Field, Flower Grassland, Grassland, FrozenRiver, River, Mountain M, Mountain Edge, Mountain
+NotBorderNear: Autumnal Woods Hills, Autumnal Woods, Maple Forest, Beach, Coast, Cold Beach, Seaboard, Shore, Stone Beach, Alpine Fir Forest, Alpine Lowland, Alpine Mountain Edge, Alpine Mountain M, Alpine Mountain, Boreal Forest, Fir Forest, Snowy Fir Forest, Cold Mega Taiga, Cold Taiga Hills, Cold Taiga M, Cold Taiga, Ice Plains, Ice Mountain, Shield, Shield Mountain Edge, Shield Mountain, Mega Spruce Taiga Hills, Mega Spruce Taiga, Mega Taiga Hills, Mega Taiga, Taiga Hills, Taiga M, Taiga, Extreme Hills Edge, Extreme Hills M, Extreme Hills+ M, Extreme Hills+, Extreme Hills, Steppe Field, Steppe Lowland, Steppe, Steppe Mountain Edge, Steppe Mountain M, Steppe Mountain, Tropical Rainforest, Hell, Sky, The Void, FrozenRiver, River, Birch Forest Hills, Birch Forest, Forest Hills, Forest, Woodland, Field, Flower Grassland, Grassland, Mountain Edge, Mountain M, Mountain, Deep Ocean, Frozen Lake, FrozenOcean, Lake, Ocean
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* borders. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenBorder number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenBorder: 8
+BiomeSizeWhenBorder: 6
 
 
 #######################################################################
@@ -155,7 +155,7 @@ CustomHeightControl: 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 15.0, 10.0, 3.5, 
 
 # Only available when ImprovedRivers is set to false in the WorldConfig.
 # Sets which biome is used as the river biome.
-RiverBiome: Jungle River
+RiverBiome:
 
 #######################
 # ImprovedRivers:true #
@@ -211,7 +211,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: None
+ReplacedBlocks: (GRASS,SAND,62,64),(DIRT,SAND,62,64),(GRAVEL,SAND,62,64)
 
 ################################
 # Water / Lava & Frozen States #

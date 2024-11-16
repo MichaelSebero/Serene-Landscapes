@@ -33,7 +33,7 @@ ResourceInheritance: true
 #   Isle biomes:   BiomeSizeWhenIsle (see below)
 #   Border biomes: BiomeSizeWhenBorder (see below)
 #   River biomes:  RiverSize (see WorldConfig)
-BiomeSize: 4
+BiomeSize: 3
 
 # Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
 # Example for normal biome :
@@ -62,7 +62,7 @@ IsleInBiome: Ocean
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 4
+BiomeSizeWhenIsle: 3
 
 # Rarity of this biome when spawned as an isle biome in BiomeMode: Normal.
 BiomeRarityWhenIsle: 100
@@ -156,7 +156,7 @@ CustomHeightControl: 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 15.0, 10.0, 3.5, 
 
 # Only available when ImprovedRivers is set to false in the WorldConfig.
 # Sets which biome is used as the river biome.
-RiverBiome: 
+RiverBiome:
 
 #######################
 # ImprovedRivers:true #
@@ -212,7 +212,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height 
-ReplacedBlocks: None
+ReplacedBlocks: (GRASS,SAND,62,64),(GRAVEL,SAND,62,64)
 
 ################################
 # Water / Lava & Frozen States #
@@ -361,8 +361,6 @@ UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
 Grass(Tallgrass,NotGrouped,10,100.0,GRASS,DIRT)
-Plant(Dandelion,2,100.0,0,128,GRASS,DIRT)
-Plant(PUMPKIN,1,3.0,0,128,GRASS)
 #CustomObject(UseWorld)
 
 #######################################################################
@@ -456,7 +454,7 @@ SpawnCreatures: []
 # For instance [{"mob": "Squid", "weight": 10, "min": 4, "max": 4}]
 # Use the "/otg entities" console command to get a list of possible mobs and mob types.
 # Use the "/otg biome -m" console command to get the list of registered mobs for a biome.
-SpawnWaterCreatures: []
+SpawnWaterCreatures: [{"mob": "Guardian", "weight": 4, "min": 1, "max": 2}]
 
 # The ambient creatures (only bats in vanila) that spawn in this biome
 # For instance [{"mob": "Bat", "weight": 10, "min": 8, "max": 8}]

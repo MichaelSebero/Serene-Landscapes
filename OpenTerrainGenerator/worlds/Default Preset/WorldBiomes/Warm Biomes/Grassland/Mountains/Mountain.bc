@@ -55,7 +55,7 @@ BiomeColor: #2a2a2a
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: Grassland
+IsleInBiome:
 
 # Size of this biome when spawned as an isle biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -80,7 +80,7 @@ BiomeIsBorder:
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River, Oasis, Island Beach, Steppe Field, Stone Beach, Shore, Coast, Ocean
+NotBorderNear: Jungle Hills, Jungle, Island Beach, Oasis, Steppe Field, Stone Beach, Shore, Coast, Ocean
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.

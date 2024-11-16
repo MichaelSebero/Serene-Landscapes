@@ -16,7 +16,7 @@ BiomeExtends:
 # it won't be copied.
 ResourceInheritance: true
 
-ReplaceToBiomeName: biomesoplenty:alps_foothills
+ReplaceToBiomeName: biomesoplenty:coniferous_forest
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -82,7 +82,7 @@ BiomeIsBorder: Alpine Mountain, Alpine Mountain M
 
 # List of biomes that cancel spawning of this biome.
 # For example, the Beach biome will never spawn next to an Extreme Hills biome.
-NotBorderNear: Extreme Hills+, Taiga, Extreme Hills M, Extreme Hills+ M, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Ice Plains, Cold Taiga, Ice Plains Spikes, Cold Taiga M, Ice Mountain, Savanna, Desert, Taiga Hills, Mesa, Jungle Edge, Jungle Hills, Jungle, Tropical Rainforest, Jungle River, Oasis, Tropical Rainforest, Island Beach, Steppe Lowland, Steppe Field, Stone Beach, Shore, Coast, Beach
+NotBorderNear: Extreme Hills+, Taiga, Extreme Hills M, Extreme Hills+ M, Taiga M, Mega Taiga, Mega Spruce Taiga, Mega Spruce Taiga Hills, Ice Plains, Cold Taiga, Ice Plains Spikes, Cold Taiga M, Ice Mountain, Savanna, Desert, Taiga Hills, Mesa, Jungle Hills, Jungle, Island Beach, Steppe Lowland, Steppe Field, Stone Beach, Shore, Coast, Beach
 
 # Size of this biome when spawned as a border biome in BiomeMode: Normal.
 # Valid values range from 0 to GenerationDepth.
@@ -249,12 +249,12 @@ CooledLavaBlock: STATIONARY_LAVA
 # When this value is around 0.2, snow will fall on mountain peaks above y=90.
 # When this value is around 0.1, the whole biome will be covered in snow and ice.
 # However, on default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeTemperature: 0.2
+BiomeTemperature: 0.25
 
 # Biome wetness. Float value from 0.0 to 1.0.
 # If this biome is a custom biome, and this value is set to 0, no rain will fall.
 # On default biomes, this won't do anything except changing the grass and leaves colors slightly.
-BiomeWetness: 0.3
+BiomeWetness: 0.8
 
 # Biome sky color.
 SkyColor: #7BA5FF
